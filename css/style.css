@@ -5,8 +5,31 @@
 }
 
 .form{
+    padding: 2rem;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 30%;
     background-color: pink;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.hidden{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .inContainer{
+        height: 10rem;
+        width: 70%;
+        border: 1px solid blue;
+        background-color: aliceblue;
+    }
 }
