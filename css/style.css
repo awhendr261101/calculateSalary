@@ -1,35 +1,83 @@
-*{
-    margin: 0;
+/* Some honorable Mentions:
+I used Mermaid Lagoon color combination as my main color palette */
+*,::after,::before{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-}
-
-.form{
-    padding: 2rem;
+  }
+  
+  body{
+    background-color: #2E8BC0;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  
+  .form {
+    border-radius: 0.4rem;
+    box-shadow: 0 20px 20px 0 rgba(0,0,0,0.2), 0 20px 20px 0 rgba(0,0,0,0.19);
+    background-color: #145DA0;
+    padding: 1rem;
+    width: 17%;
     display: flex;
     flex-direction: column;
-    width: 30%;
-    background-color: pink;
-
-}
-
-body{
+    margin-block: 2rem;
+  }
+  
+  .form label {
+    padding-top: 1rem;
+  }
+  
+  input{
+    padding: 0.3rem;
+  }
+  
+  .form .buttons {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    justify-content: space-between;
+    padding-top: 1rem;
     
-}
-
-.hidden{
+  }
+  .buttons input{
+    transition-duration: 0.5s;
+  }
+  .buttons input:hover{
+    transform: scale(1.3);
+  }
+  
+  .pronouns{
+    padding-top: 1rem;
+  }
+  
+  .subjects{
+    margin-top: 1rem;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+    background-color: #B1D4E0;
+    
+  }
+  
+  .hidden{
+    padding: 0.7rem;
+    background-color: #B1D4E0;
+    width: 75%;
+  }
+  
+  
+  .calbutton{
+    width: 9.5rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    & .inContainer{
-        height: 10rem;
-        width: 70%;
-        border: 1px solid blue;
-        background-color: aliceblue;
-    }
-}
+  }
+  .calculate{
+    margin-top: 0.5rem;
+    width: 50%;
+    background-color: green;
+  }
+  
+  .form .error{
+    color: yellow;
+  }
